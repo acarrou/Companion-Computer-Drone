@@ -2,7 +2,7 @@
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
     - [Parts Required](#parts-required)
-    -- [Assembly](#assembly)
+    - [Assembly](#assembly)
 
     - [Installation for Ubuntu](#installation)
   - [Run the Avoidance Gazebo Simulation](#run-the-avoidance-gazebosimulation)
