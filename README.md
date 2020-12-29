@@ -1,6 +1,6 @@
 # Table of Contents
 - [Introduction](#introduction)
-- [Getting Started](#:one:-getting-started)
+- [Getting Started](#one-getting-started)
     - [Parts Required](#parts-required)
     - [Drone Assembly](#assembly)
     - [Firmware](#firmware)
