@@ -7,7 +7,7 @@
 # Introduction
 This guide is here to help people interested in making a drone using a Pixhawk to control it with an onboard computer of your choice using Dronekit or ROS. There are specific components that are needed in order to complete this project.
 
-# Getting Started
+# :one: Getting Started
 ## Parts Required
 Below is a link with the parts required for this project. Please read carefully on what is needed. This is also assuming you have the necessary tools of a soldering iron, snips and other basic tools needed in electronics.
 https://docs.google.com/document/d/1yg1S2lEn6Pxzbmr_OziczwqIsVRe4be1YQAyOio6FKI/edit?usp=sharing
