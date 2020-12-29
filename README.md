@@ -1,10 +1,10 @@
 # Table of Contents
 - [Introduction](#introduction)
-- [Getting Started](#one-getting-started)
+- [:one: Getting Started](#one-getting-started)
     - [Parts Required](#parts-required)
     - [Drone Assembly](#assembly)
     - [Firmware](#firmware)
-- [The Onboard Computer](#the-onboard-computer)
+- [:two: The Onboard Computer](#two-the-onboard-computer)
     
 
 # Introduction
@@ -21,7 +21,7 @@ https://youtube.com/playlist?list=PLm_39In9-wKMa8U90cwcDMecCGuM5Sja1
 (ENTER VIDEOS WE HAVE HERE)
 ## Firmware
 
-# The Onboard Computer
+# :two: The Onboard Computer
 
 
 
