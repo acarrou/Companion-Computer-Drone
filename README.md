@@ -4,12 +4,8 @@
     - [Parts Required](#parts-required)
     - [Assembly](#assembly)
 
-
 # Introduction
-This guide is here to help people interested in making a drone using an onboard computer of your choice. There are specific peices of hardware that
-are needed in order to complete this project.
-
-Learn how to create a drone using a Pixhawk and control it with an onboard computer of your choice using Dronekit or ROS
+This guide is here to help people interested in making a drone using a Pixhawk to control it with an onboard computer of your choice using Dronekit or ROS. There are specific components that are needed in order to complete this project.
 
 # Getting Started
 ## Parts Required
@@ -18,6 +14,7 @@ https://docs.google.com/document/d/1yg1S2lEn6Pxzbmr_OziczwqIsVRe4be1YQAyOio6FKI/
 ## Assembly
 Below is a playlist of videos showing you on how to build your drone. This will also go over how to flash the firmware to the pixhawk. You can choose either Ardupilot or PX4, however I recommend PX4 Firmware.
 https://youtube.com/playlist?list=PLm_39In9-wKMa8U90cwcDMecCGuM5Sja1
+|
 (ENTER VIDEOS WE HAVE HERE)
 
 
