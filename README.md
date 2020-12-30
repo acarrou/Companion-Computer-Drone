@@ -6,7 +6,12 @@
     - [Firmware](#firmware)
 - [:two: The Onboard Computer](#two-the-onboard-computer)
     - [Jetson Nano](#jetson-nano)
+        - [ROS Melodic Installation](#ros-melodic-installation)
+        - [MAVROS](#mavros)
     - [Raspberry Pi](#raspberry-pi)
+        - [GPIO Pin Configuration](#gpio-pin-configuration)
+        - [Connection to the Pixhawk](#connection-to-the-pixhawk)
+        - [Dronekit](#dronekit)
     
 
 # Introduction
@@ -28,15 +33,18 @@ There are two companion computers we recommend using, the Jetson Nano or the Ras
 
 ## Jetson Nano
 For more information on the Jetson nano please follow this [site](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit). You should use [Balena Etcher](https://www.balena.io/etcher/) for an easy imaging process. A helpful video I found is [here](https://www.youtube.com/watch?v=fepv1uDyiXk). Use the image given for the Jetson Nano [here](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write). Once you have successfully imaged your Jetson Nano put the sd card into the nano.
-### Using MAVROS
 #### ROS Melodic Installation
+***--NEED TO DO THIS--***
+<br><br/>
+<br><br/>
+### MAVROS
 ***--NEED TO DO THIS--***
 <br><br/>
 <br><br/>
 
 
 ## Raspberry Pi
-Install Raspberry Pi OS using Raspberry Pi Imager [here](https://www.raspberrypi.org/software/). Image the Pi with the reccomended OS. You can use this [video](https://www.youtube.com/watch?v=y45hsd2AOpw) to help you image the Pi.
+Start by Installing the Raspberry Pi OS using Raspberry Pi Imager [here](https://www.raspberrypi.org/software/). Image the Pi with the reccomended OS. You can use this [video](https://www.youtube.com/watch?v=y45hsd2AOpw) to help you image the Pi.
 
 ### GPIO Pin Configuration
 In order for the Pi to communicate with the Pixhawk we need to connect four cables. They are 5V, GND, TX and RX. You will need to create the connector yourself. I purchased this [kit](https://www.amazon.com/1-25mm-Connectors-Pre-Crimped-Pixhawk-Silicone/dp/B07S18D3RN/ref=pd_lpo_421_img_1/141-3051472-7066820?_encoding=UTF8&pd_rd_i=B07S18D3RN&pd_rd_r=f3a9d5f4-62e9-4587-960a-f1adead929ca&pd_rd_w=1BF6V&pd_rd_wg=si57j&pf_rd_p=7b36d496-f366-4631-94d3-61b87b52511b&pf_rd_r=M89NX5SX5CSHB6VGESD6&psc=1&refRID=M89NX5SX5CSHB6VGESD6) to make my own. I then soldered the connectors from the pixhawk to 4 female jumper wires.
@@ -88,7 +96,7 @@ Then check to see if the pi can communicate with a ncomputer using QGroundContro
 mavproxy.py --master=/dev/serial0 --baudrate 921600 --out <Computer IP>:14550 --aircraft MyCopter 
 ```
 
-### Using Dronekit
+### Dronekit
 
 
 
