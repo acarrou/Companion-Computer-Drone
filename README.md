@@ -28,6 +28,9 @@ Below is a link to the parts required for this project. Please read carefully wh
 |
 (ENTER VIDEOS WE HAVE HERE)
 ## Firmware
+***--NEED TO DO THIS (Video Tutorial?)--***
+<br><br/>
+<br><br/>
 
 # :two: The Onboard Computer
 There are two companion computers we recommend using the Jetson Nano or the Raspberry Pi. Make sure you have all the necessary parts to power and put an OS on these computers. You will need a device to put the OS on the micro sd card. Something like this -> ***[Micro SD Card USB Reader.](https://www.amazon.com/UGREEN-Reader-Portable-Adapter-Windows/dp/B0779V61XB/ref=sr_1_7?dchild=1&keywords=micro+sd+usb&qid=1609284957&sr=8-7)*** This makes it easy to image. 
