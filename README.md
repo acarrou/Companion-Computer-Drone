@@ -33,7 +33,7 @@ There are two companion computers we recommend using, the Jetson Nano or the Ras
 
 ## Jetson Nano
 For more information on the Jetson nano please follow this [site](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit). You should use [Balena Etcher](https://www.balena.io/etcher/) for an easy imaging process. A helpful video I found is [here](https://www.youtube.com/watch?v=fepv1uDyiXk). Use the image given for the Jetson Nano [here](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write). Once you have successfully imaged your Jetson Nano put the sd card into the nano.
-#### ROS Melodic Installation
+### ROS Melodic Installation
 ***--NEED TO DO THIS--***
 <br><br/>
 <br><br/>
