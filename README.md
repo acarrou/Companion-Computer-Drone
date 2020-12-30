@@ -2,7 +2,7 @@
 - [Introduction](#introduction)
 - [:one: Getting Started](#one-getting-started)
     - [Parts Required](#parts-required)
-    - [Drone Assembly](#assembly)
+    - [Drone Assembly](#drone-assembly)
     - [Firmware](#firmware)
 - [:two: The Onboard Computer](#two-the-onboard-computer)
     - [Jetson Nano](#jetson-nano)
@@ -24,13 +24,50 @@ Below is a link with the parts required for this project. Please read carefully 
 ## Firmware
 
 # :two: The Onboard Computer
-There are two companion computers we recommend using, the Jetson Nano or the Raspberry Pi. Make sure you have all necessary parts to power and put an OS on these computers. You will need a device to put the OS on the micro sd card. Something like this -> [Micro SD Card USB Reader.](https://www.amazon.com/UGREEN-Reader-Portable-Adapter-Windows/dp/B0779V61XB/ref=sr_1_7?dchild=1&keywords=micro+sd+usb&qid=1609284957&sr=8-7) This makes it easy to image. You should use [Balena Etcher](https://www.balena.io/etcher/) for an easy imaging process. A helpful video I found is [here](https://www.youtube.com/watch?v=fepv1uDyiXk)
+There are two companion computers we recommend using, the Jetson Nano or the Raspberry Pi. Make sure you have all necessary parts to power and put an OS on these computers. You will need a device to put the OS on the micro sd card. Something like this -> [Micro SD Card USB Reader.](https://www.amazon.com/UGREEN-Reader-Portable-Adapter-Windows/dp/B0779V61XB/ref=sr_1_7?dchild=1&keywords=micro+sd+usb&qid=1609284957&sr=8-7) This makes it easy to image. 
 
 ## Jetson Nano
-For more information on the Jetson nano please follow this [site](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit). Use the image given for the Jetson Nano [here](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write). Once you have successfully imaged your Jetson Nano put the sd card into the nano.
+For more information on the Jetson nano please follow this [site](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit). You should use [Balena Etcher](https://www.balena.io/etcher/) for an easy imaging process. A helpful video I found is [here](https://www.youtube.com/watch?v=fepv1uDyiXk). Use the image given for the Jetson Nano [here](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write). Once you have successfully imaged your Jetson Nano put the sd card into the nano.
+### Using MAVROS
+#### ROS Melodic Installation
+
+
+
+
 ## Raspberry Pi
+Install Raspberry Pi OS using Raspberry Pi Imager [here](https://www.raspberrypi.org/software/). Image the Pi with the reccomended OS. You can use this [video](https://www.youtube.com/watch?v=y45hsd2AOpw) to help you image the Pi.
+### Using MAVProxy with Dronekit
 
 
+
+### GPIO Pin Configuration
+
+
+### Connection to the Pixhawk
+
+On your Raspberry Pi, enter:
+```sudo raspi-config```
+And in the utility, select “Interfacing Options”:
+
+You will need to change the parameters of the pixhawk in QGroundControl. The specific parameters that need to change are:
+
+<ins>To set up the default companion computer message stream on TELEM 2, set the following parameters:</ins>
+```
+MAV_1_CONFIG = TELEM 2 (MAV_1_CONFIG is often used to map the TELEM 2 port)
+MAV_1_MODE = Onboard
+SER_TEL2_BAUD = 921600 (921600 or higher recommended for applications like log streaming or FastRTPS)
+```
+
+
+Once you have changed those parameters you can run this command in the terminal to test if the connection is made.
+```
+mavproxy.py --master=/dev/serial0 --baudrate 921600 --aircraft MyCopter
+``` 
+
+Then check to see if the pi can communicate with a ncomputer using QGroundControl
+```
+mavproxy.py --master=/dev/serial0 --baudrate 921600 --out <Computer IP>:14550 --aircraft MyCopter 
+```
 
 
 
