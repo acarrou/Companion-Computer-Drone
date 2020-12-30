@@ -1,3 +1,7 @@
+# Introduction
+This guide is meant to help people interested in making a drone using a Pixhawk as the flight controller with an onboard computer of your choice using Dronekit or ROS. There are specific components that are needed to complete this project.
+
+
 # Table of Contents
 - [Introduction](#introduction)
 - [:one: Getting Started](#one-getting-started)
@@ -13,9 +17,6 @@
         - [Connection to the Pixhawk](#connection-to-the-pixhawk)
         - [Dronekit](#dronekit)
     
-
-# Introduction
-This guide is meant to help people interested in making a drone using a Pixhawk as the flight controller with an onboard computer of your choice using Dronekit or ROS. There are specific components that are needed to complete this project.
 
 # :one: Getting Started
 ## Parts Required
