@@ -30,6 +30,7 @@ There are two companion computers we recommend using, the Jetson Nano or the Ras
 For more information on the Jetson nano please follow this [site](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit). You should use [Balena Etcher](https://www.balena.io/etcher/) for an easy imaging process. A helpful video I found is [here](https://www.youtube.com/watch?v=fepv1uDyiXk). Use the image given for the Jetson Nano [here](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write). Once you have successfully imaged your Jetson Nano put the sd card into the nano.
 ### Using MAVROS
 #### ROS Melodic Installation
+***--NEED TO DO THIS--***
 <br><br/>
 <br><br/>
 
@@ -37,20 +38,22 @@ For more information on the Jetson nano please follow this [site](https://develo
 ## Raspberry Pi
 Install Raspberry Pi OS using Raspberry Pi Imager [here](https://www.raspberrypi.org/software/). Image the Pi with the reccomended OS. You can use this [video](https://www.youtube.com/watch?v=y45hsd2AOpw) to help you image the Pi.
 ### Using MAVProxy with Dronekit
-***NEED TO DO THIS***
+***--NEED TO DO THIS--***
 <br><br/>
 <br><br/>
 
 ### GPIO Pin Configuration
-***NEED TO DO THIS***
+***--NEED TO DO THIS--***
 <br><br/>
 <br><br/>
+
+
 ### Connection to the Pixhawk
 
 On your Raspberry Pi, enter:
 ```sudo raspi-config```
 And in the utility, select “Interfacing Options”:
-***NEED TO DO THIS***
+***--NEED TO DO THIS--***
 <br><br/>
 <br><br/>
 You will need to change the parameters of the pixhawk in QGroundControl. The specific parameters that need to change are:
