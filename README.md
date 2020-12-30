@@ -20,7 +20,7 @@ This guide is meant to help people interested in making a drone using a Pixhawk 
 
 # :one: Getting Started
 ## Parts Required
-Below is a link to the parts required for this project. Please read carefully what is needed. This is also assuming you have the necessary tools of a soldering iron, snips, and other essential tools needed in electronics. :arrow_down:
+Below is a link to the parts required for this project. Please read carefully what is needed. This is also assuming you have the necessary tools of a soldering iron, snips, and other essential tools needed in electronics. <br><br/>
 ***[Parts List](https://docs.google.com/document/d/1yg1S2lEn6Pxzbmr_OziczwqIsVRe4be1YQAyOio6FKI/edit?usp=sharing)***
 ## Drone Assembly
 ***[Here](https://youtube.com/playlist?list=PLm_39In9-wKMa8U90cwcDMecCGuM5Sja1)*** is a playlist of videos showing you how to build your drone. This will also go over how to flash the firmware to the pixhawk. I will go more in-depth regarding the firmware in the next area. You can choose either Ardupilot or PX4. However, I recommend PX4 Firmware.
