@@ -37,10 +37,6 @@ For more information on the Jetson nano please follow this [site](https://develo
 
 ## Raspberry Pi
 Install Raspberry Pi OS using Raspberry Pi Imager [here](https://www.raspberrypi.org/software/). Image the Pi with the reccomended OS. You can use this [video](https://www.youtube.com/watch?v=y45hsd2AOpw) to help you image the Pi.
-### Using MAVProxy with Dronekit
-***--NEED TO DO THIS--***
-<br><br/>
-<br><br/>
 
 ### GPIO Pin Configuration
 ***--NEED TO DO THIS--***
@@ -68,13 +64,9 @@ Reboot the Raspberry Pi when you are done.
 
 The Raspberry Pi’s serial port will now be usable on ```/dev/serial0```.
 
-
-***--NEED TO DO THIS--***
 <br><br/>
 <br><br/>
-You will need to change the parameters of the pixhawk in QGroundControl. The specific parameters that need to change are:
-
-<ins>To set up the default companion computer message stream on TELEM 2, set the following parameters:</ins>
+You will need to change the parameters of the pixhawk in QGroundControl. To set up the default companion computer message stream on TELEM 2, set the following parameters:
 ```
 MAV_1_CONFIG = TELEM 2 (MAV_1_CONFIG is often used to map the TELEM 2 port)
 MAV_1_MODE = Onboard
@@ -92,6 +84,7 @@ Then check to see if the pi can communicate with a ncomputer using QGroundContro
 mavproxy.py --master=/dev/serial0 --baudrate 921600 --out <Computer IP>:14550 --aircraft MyCopter 
 ```
 
+### Using Dronekit
 
 
 
