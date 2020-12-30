@@ -78,7 +78,8 @@ The Raspberry Pi’s serial port will now be usable on ```/dev/serial0```.
 
 <br><br/>
 <br><br/>
-You will need to change the parameters of the pixhawk in QGroundControl. To set up the default companion computer message stream on TELEM 2, set the following parameters:
+
+Once you have configured you Pi, you now have to change a few parameters on your pixhawk in QGroundControl or another ground control software. To set up the default companion computer message stream on TELEM 2, set the following parameters:
 ```
 MAV_1_CONFIG = TELEM 2 (MAV_1_CONFIG is often used to map the TELEM 2 port)
 MAV_1_MODE = Onboard
@@ -97,7 +98,9 @@ mavproxy.py --master=/dev/serial0 --baudrate 921600 --out <Computer IP>:14550 --
 ```
 
 ### Dronekit
-
+***--NEED TO DO THIS--***
+<br><br/>
+<br><br/>
 
 
 
