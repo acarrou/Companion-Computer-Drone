@@ -39,7 +39,11 @@ For more information on the Jetson nano please follow this [site](https://develo
 Install Raspberry Pi OS using Raspberry Pi Imager [here](https://www.raspberrypi.org/software/). Image the Pi with the reccomended OS. You can use this [video](https://www.youtube.com/watch?v=y45hsd2AOpw) to help you image the Pi.
 
 ### GPIO Pin Configuration
-***--NEED TO DO THIS--***
+In order for the Pi to communicate with the Pixhawk we need to connect four cables. They are 5V, GND, TX and RX. You will need to create the connector yourself. I purchased this [kit](https://www.amazon.com/1-25mm-Connectors-Pre-Crimped-Pixhawk-Silicone/dp/B07S18D3RN/ref=pd_lpo_421_img_1/141-3051472-7066820?_encoding=UTF8&pd_rd_i=B07S18D3RN&pd_rd_r=f3a9d5f4-62e9-4587-960a-f1adead929ca&pd_rd_w=1BF6V&pd_rd_wg=si57j&pf_rd_p=7b36d496-f366-4631-94d3-61b87b52511b&pf_rd_r=M89NX5SX5CSHB6VGESD6&psc=1&refRID=M89NX5SX5CSHB6VGESD6) to make my own. I then soldered the connectors from the pixhawk to 4 female jumper wires.
+
+***Here is the configuration of the pins***
+![alt text](https://discuss.ardupilot.org/uploads/default/original/2X/f/f837b6b1116ec02c3490e34035c2f09da5a62936.jpg)
+
 <br><br/>
 <br><br/>
 
