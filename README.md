@@ -53,6 +53,22 @@ Install Raspberry Pi OS using Raspberry Pi Imager [here](https://www.raspberrypi
 On your Raspberry Pi, enter:
 ```sudo raspi-config```
 And in the utility, select “Interfacing Options”:
+![alt text](https://ardupilot.org/dev/_images/RaspberryPi_Serial1.png)
+<br><br/>
+RasPiConfiguration Utility
+And then “Serial”:
+<br><br/>
+![alt text](https://ardupilot.org/dev/_images/RaspberryPi_Serial2.png)
+<br><br/>
+When prompted, select ```no``` to “Would you like a login shell to be accessible over serial?”.
+
+When prompted, select ```yes``` to “Would you like the serial port hardware to be enabled?”.
+
+Reboot the Raspberry Pi when you are done.
+
+The Raspberry Pi’s serial port will now be usable on ```/dev/serial0```.
+
+
 ***--NEED TO DO THIS--***
 <br><br/>
 <br><br/>
