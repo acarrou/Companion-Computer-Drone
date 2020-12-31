@@ -40,8 +40,12 @@ Make sure your motors are in the correct configuration. You do this by making su
 
 ***---EDIT THIS (Add more info)---*** :arrow_down:
 <br><br/>
+Plug the ESC pins into back of the Pixhawk. (order should be from top-> -, s, +) ***Make sure they are in the correct order or your drone will fly incorrectly.***
 ![alt text](https://ardupilot.org/copter/_images/Pixhwak_outputs.jpg)
-
+<br><br/>
+Plug in the rest of  the modules you've puchased into their respected slots as showed in this image:
+<br><br/>
+![alt text](https://ardupilot.org/copter/_images/Pixhawk-Inforgraphic2.jpg)
 
 ***--ENTER VIDEOS HERE--***
 ## Firmware
