@@ -30,10 +30,13 @@ Make sure your motors are in the correct configuration. You do this by making su
 ***I recommend you put on the propellers very last. Not until you are ready to fly.***
 <br><br/>
 ![alt text](https://ardupilot.org/copter/_images/motororder-quad-x-2d.png)
-![alt text](https://aws.robu.in/wp-content/uploads/2019/03/connection.jpg)
 <br><br/>
-
 ![alt text](https://ardupilot.org/copter/_images/MOTORS_CW_CCWLegend.jpg)
+<br><br/>
+![alt text](https://aws.robu.in/wp-content/uploads/2019/03/connection.jpg)
+
+
+
 
 ***---EDIT THIS (Add more info)---*** :arrow_down:
 <br><br/>
