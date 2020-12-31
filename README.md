@@ -40,7 +40,9 @@ Make sure your motors are in the correct configuration. Below is a diagram of th
 
 ***--ENTER VIDEOS HERE--***
 ## Firmware
-***--NEED TO DO THIS (Video Tutorial?)--***
+We are using [QGroundControl](https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html), it works great and makes it easy to set parameters. Follow this [video](https://www.youtube.com/watch?v=BNzeVGD8IZI&t=677s) on how to install the PX4 Firmware. If you would like to use the Ardupilot firmware click on Ardupilot in the QGroundControl options. If you have issues with the latest px4 firmware you can look at earlier versions [here](https://github.com/PX4/PX4-Autopilot/releases), we are currently using v1.10.1.
+![alt text](https://docs.qgroundcontrol.com/master/assets/setup/firmware/firmware_select_default_px4.jpg)
+
 <br><br/>
 <br><br/>
 
@@ -92,7 +94,6 @@ Reboot the Raspberry Pi when you are done.
 
 The Raspberry Pi’s serial port will now be usable on ```/dev/serial0```.
 
-<br><br/>
 <br><br/>
 
 Once you have configured you Pi, you now have to change a few parameters on your pixhawk in QGroundControl or another ground control software. To set up the default companion computer message stream on TELEM 2, set the following parameters:
