@@ -41,15 +41,17 @@ Make sure your motors are in the correct configuration. You do this by making su
 ***---EDIT THIS (Add more info)---*** :arrow_down:
 <br><br/>
 Plug the ESC pins into back of the Pixhawk. (order should be from top-> -, s, +) ***Make sure they are in the correct order or your drone will fly incorrectly.***
+<br><br/>
 ![alt text](https://ardupilot.org/copter/_images/Pixhwak_outputs.jpg)
 <br><br/>
 Plug in the rest of  the modules you've puchased into their respected slots as showed in this image:
 <br><br/>
 ![alt text](https://ardupilot.org/copter/_images/Pixhawk-Inforgraphic2.jpg)
 
-***--ENTER VIDEOS HERE--***
+<br><br/>
+
 ## Firmware
-We are using [QGroundControl](https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html), it works great and makes it easy to set parameters. Follow this [video](https://www.youtube.com/watch?v=BNzeVGD8IZI&t=677s) on how to install the PX4 Firmware. If you would like to use the Ardupilot firmware click on Ardupilot in the QGroundControl options. If you have issues with the latest px4 firmware you can look at earlier versions [here](https://github.com/PX4/PX4-Autopilot/releases), we are currently using v1.10.1.
+We are using [QGroundControl](https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html), it works great and makes it easy to set parameters. Follow this [video](https://www.youtube.com/watch?v=BNzeVGD8IZI&t=677s) on how to install the PX4 Firmware. If you would like to use the Ardupilot firmware click on Ardupilot in the QGroundControl options. If you have issues with the latest px4 firmware you can look at earlier versions [here](https://github.com/PX4/PX4-Autopilot/releases), we are currently using ***v1.10.1***.
 ![alt text](https://docs.qgroundcontrol.com/master/assets/setup/firmware/firmware_select_default_px4.jpg)
 
 <br><br/>
