@@ -14,7 +14,8 @@ This guide is meant to help people interested in making a drone using a Pixhawk 
         - [MAVROS](#mavros)
     - [Raspberry Pi](#raspberry-pi)
         - [GPIO Pin Configuration](#gpio-pin-configuration)
-        - [Connection to the Pixhawk](#connection-to-the-pixhawk)
+        - [Raspberry Pi Serial Configuration](#raspberry-pi-serial-configuration)
+        - [Raspberry Pi and Pixhawk Communication](#raspberry-pi-and-pixhawk-communication)
         - [Dronekit](#dronekit)
     
 
@@ -44,7 +45,6 @@ We are using [QGroundControl](https://docs.qgroundcontrol.com/master/en/getting_
 ![alt text](https://docs.qgroundcontrol.com/master/assets/setup/firmware/firmware_select_default_px4.jpg)
 
 <br><br/>
-<br><br/>
 
 # :two: The Onboard Computer
 There are two companion computers we recommend using the Jetson Nano or the Raspberry Pi. Make sure you have all the necessary parts to power and put an OS on these computers. You will need a device to put the OS on the micro sd card. Something like this -> ***[Micro SD Card USB Reader.](https://www.amazon.com/UGREEN-Reader-Portable-Adapter-Windows/dp/B0779V61XB/ref=sr_1_7?dchild=1&keywords=micro+sd+usb&qid=1609284957&sr=8-7)*** This makes it easy to image. 
@@ -71,10 +71,8 @@ In order for the Pi to communicate with the Pixhawk, we need to connect four cab
 ![alt text](https://discuss.ardupilot.org/uploads/default/original/2X/f/f837b6b1116ec02c3490e34035c2f09da5a62936.jpg)
 
 <br><br/>
-<br><br/>
 
-
-### Connection to the Pixhawk
+### Raspberry Pi Serial Configuration
 
 On your Raspberry Pi, enter:
 ```sudo raspi-config```
@@ -96,6 +94,9 @@ The Raspberry Pi’s serial port will now be usable on ```/dev/serial0```.
 
 <br><br/>
 
+
+### Raspberry Pi and Pixhawk Communication
+
 Once you have configured you Pi, you now have to change a few parameters on your pixhawk in QGroundControl or another ground control software. To set up the default companion computer message stream on TELEM 2, set the following parameters:
 ```
 MAV_1_CONFIG = TELEM 2 (MAV_1_CONFIG is often used to map the TELEM 2 port)
@@ -103,8 +104,7 @@ MAV_1_MODE = Onboard
 SER_TEL2_BAUD = 921600 (921600 or higher recommended for applications like log streaming or FastRTPS)
 ```
 
-
-Once you have changed those parameters you can run this command in the terminal to test if the connection is made.
+After you have changed those parameters restart the Pixhawk. If not done already, connect the Raspberry Pi to the Pixhawk. Run this command in the terminal to test if the connection is made.
 ```
 mavproxy.py --master=/dev/serial0 --baudrate 921600 --aircraft MyCopter
 ``` 
