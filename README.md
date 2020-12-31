@@ -32,7 +32,9 @@ Make sure your motors are in the correct configuration. Below is a diagram of th
 ![alt text](https://ardupilot.org/copter/_images/motororder-quad-x-2d.png)
 <br><br/>
 
-***---EDIT THIS---***
+![alt text](https://ardupilot.org/copter/_images/MOTORS_CW_CCWLegend.jpg)
+
+***---EDIT THIS (Add more info)---*** :arrow_down:
 <br><br/>
 ![alt text](https://ardupilot.org/copter/_images/Pixhwak_outputs.jpg)
 
