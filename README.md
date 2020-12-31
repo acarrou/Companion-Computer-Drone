@@ -27,9 +27,15 @@ Everything on the ***[Parts List](https://docs.google.com/document/d/1yg1S2lEn6P
 
 Make sure your motors are in the correct configuration. Below is a diagram of the direction of the motors.
 <br><br/>
-I rcommend you put on the propellers last.
+<u>I rcommend you put on the propellers last.</u>
 <br><br/>
 ![alt text](https://ardupilot.org/copter/_images/motororder-quad-x-2d.png)
+<br><br/>
+
+***---EDIT THIS---***
+<br><br/>
+![alt text](https://ardupilot.org/copter/_images/Pixhwak_outputs.jpg)
+
 
 ***--ENTER VIDEOS HERE--***
 ## Firmware
