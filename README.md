@@ -3,7 +3,6 @@ This guide is meant to help people interested in making a drone using a Pixhawk 
 
 
 # Table of Contents
-- [Introduction](#introduction)
 - [:one: Getting Started](#one-getting-started)
     - [Parts Required](#parts-required)
     - [Drone Assembly](#drone-assembly)
