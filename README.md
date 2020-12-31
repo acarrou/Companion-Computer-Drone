@@ -25,8 +25,13 @@ Everything on the ***[Parts List](https://docs.google.com/document/d/1yg1S2lEn6P
 ## Drone Assembly
 ***[Here](https://youtube.com/playlist?list=PLm_39In9-wKMa8U90cwcDMecCGuM5Sja1)*** is a playlist of videos showing you how to build your drone. This will also go over how to flash the firmware to the pixhawk. I will go more in-depth regarding the firmware in the next area. You can choose either Ardupilot or PX4. However, I recommend PX4 Firmware.
 
-|
-(ENTER VIDEOS WE HAVE HERE)
+Make sure your motors are in the correct configuration. Below is a diagram of the direction of the motors.
+<br><br/>
+I rcommend you put on the propellers last.
+<br><br/>
+![alt text](https://ardupilot.org/copter/_images/motororder-quad-x-2d.png)
+
+***--ENTER VIDEOS HERE--***
 ## Firmware
 ***--NEED TO DO THIS (Video Tutorial?)--***
 <br><br/>
