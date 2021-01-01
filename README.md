@@ -128,7 +128,7 @@ mavproxy.py --master=/dev/serial0 --baudrate 921600 --out <Computer IP>:14550 --
 ```
 
 ### Dronekit
-#### Simulation
+#### **Simulation**
 If simulating the drone using Dronekit to test scripts is something you're interested in follow along. Otherwise proceed to the Dronekit Installation on the Pi. We are using Ubuntu 18.04 but any other Ubuntu version should work.
 <br><br/>
 
@@ -179,7 +179,7 @@ While the Simulation is running in the background, you can use an IDE of your ch
 Notice the code uses the IP - '127.0.0.1:14540' as this is the simualtions IP. Run the code and see it take off!
 <br><br/>
 
-#### Running Dronekit on the Pi
+#### **Running Dronekit on the Pi**
 In your Raspberry Pi's terminal enter these commands:
 
 Update Pi
