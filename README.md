@@ -15,7 +15,7 @@ This guide is meant to help people interested in making a drone using a Pixhawk 
         - [GPIO Pin Configuration](#gpio-pin-configuration)
         - [Raspberry Pi Serial Configuration](#raspberry-pi-serial-configuration)
         - [Raspberry Pi and Pixhawk Communication](#raspberry-pi-and-pixhawk-communication)
-        - [Dronekit](#dronekit)
+        - [Dronekit and Simulation](#dronekit-and-simulation)
     
 
 # :one: Getting Started
@@ -123,10 +123,82 @@ Then check to see if the pi can communicate with a ncomputer using QGroundContro
 mavproxy.py --master=/dev/serial0 --baudrate 921600 --out <Computer IP>:14550 --aircraft MyCopter 
 ```
 
-### Dronekit
+### Dronekit and Simulation (Ubuntu)
 ***--NEED TO DO THIS--***
 <br><br/>
 <br><br/>
+#### Simulation
+If simulating the drone using Dronekit to test scripts is something you're interested in follow along. Otherwise proceed to the Dronekit Installation on the Pi.
+<br><br/>
+
+Clone the PX4 source code:
+<br/>
+```git clone https://github.com/PX4/PX4-Autopilot.git --recursive```
+<br><br/>
+
+Install:
+<br/>
+```bash ./Tools/setup/ubuntu.sh```
+<br><br/>
+
+Check to see if you can run the simulation on your linux machine:
+Enter directory:
+<br/>
+```cd /path/to/PX4-Autopilot```
+<br><br/>
+
+Choose from either Gazebo or jMAVSim
+<br/>
+```make px4_sitl_default```
+<br/>
+or 
+<br/>
+```make px4_sitl gazebo```
+<br><br/>
+
+In your linux terminal clone the Dronekit repository using:
+<br/>
+```git clone https://github.com/dronekit/dronekit-python.git```
+<br/>
+Enter the directory:
+<br/>
+```cd ./dronekit-python```
+<br/>
+Then build and install:
+<br/>
+```
+sudo python setup.py build
+sudo python setup.py install
+```
+<br><br/>
+
+While the Simulation is running in the background, you can use an IDE of your choice (We are using Pycharm). In the IDE go to the directory and use the interpreter from the dronekit repository. Then run this code below that uses the Dronekit library.
+<br><br/>
+***---File here---***
+
+
+
+In your Raspberry Pi's terminal enter these commands:
+
+Update Pi
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+Install Dronekit, and Dependencies
+```
+sudo apt-get install python-pip python-dev
+sudo pip install pyserial
+sudo pip install dronekit
+sudo pip install MAVProxy
+```
+
+
+
+
+
+
+
 
 
 
