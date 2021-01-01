@@ -17,7 +17,7 @@ This guide is meant to help people interested in making a drone using a Pixhawk 
         - [Raspberry Pi and Pixhawk Communication](#raspberry-pi-and-pixhawk-communication)
         - [Dronekit](#dronekit)
             - [Simulation](#simulation)
-            - [Running Dronekit on the Pi)](#running-dronekit-on-the-pi)
+            - [Running Dronekit on the Pi](#running-dronekit-on-the-pi)
             
         
     
