@@ -139,8 +139,9 @@ Install:
 ```bash ./Tools/setup/ubuntu.sh```
 <br><br/>
 
-Check to see if you can run the simulation on your linux machine:
-Enter directory:
+Check to see if you can run the simulation on your linux machine.
+<br/>
+Enter the directory:
 <br/>
 ```cd /path/to/PX4-Autopilot```
 <br><br/>
