@@ -19,7 +19,7 @@ This guide is meant to help people interested in making a drone using a Pixhawk 
             - [Simulation](#simulation)
             - [Running Dronekit on the Pi](#running-dronekit-on-the-pi)
             
-        
+<br><br/>
     
 
 # :one: Getting Started
@@ -39,9 +39,6 @@ Make sure your motors are in the correct configuration. You do this by making su
 ![alt text](https://aws.robu.in/wp-content/uploads/2019/03/connection.jpg)
 
 
-
-
-***---EDIT THIS (Add more info)---*** :arrow_down:
 <br><br/>
 Plug the ESC pins into back of the Pixhawk. (order should be from top-> -, s, +) ***Make sure they are in the correct order or your drone will fly incorrectly.***
 <br><br/>
@@ -82,7 +79,6 @@ In order for the Pi to communicate with the Pixhawk, we need to connect four cab
 
 ***Here is the configuration of the pins***
 ![alt text](https://discuss.ardupilot.org/uploads/default/original/2X/f/f837b6b1116ec02c3490e34035c2f09da5a62936.jpg)
-
 <br><br/>
 
 ### Raspberry Pi Serial Configuration
@@ -94,7 +90,7 @@ And in the utility, select “Interfacing Options”:
 <br><br/>
 RasPiConfiguration Utility
 And then “Serial”:
-<br><br/>
+<br/>
 ![alt text](https://ardupilot.org/dev/_images/RaspberryPi_Serial2.png)
 <br><br/>
 When prompted, select ```no``` to “Would you like a login shell to be accessible over serial?”.
@@ -126,6 +122,7 @@ Then check to see if the pi can communicate with a ncomputer using QGroundContro
 ```
 mavproxy.py --master=/dev/serial0 --baudrate 921600 --out <Computer IP>:14550 --aircraft MyCopter 
 ```
+<br><br/>
 
 ### Dronekit
 #### **Simulation**
