@@ -176,7 +176,7 @@ While the Simulation is running in the background, you can use an IDE of your ch
 <br/>
 [Dronekit Mission Example](DronekitMissionEx)
 <br/>
-Notice the code uses the IP - '127.0.0.1:14540' as this is the simualtions IP. Run the code and see it take off!
+Notice the code uses the IP - '127.0.0.1:14540' as this is the simulations IP. Run the code and see it take off!
 <br><br/>
 
 #### **Running Dronekit on the Pi**
