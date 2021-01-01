@@ -153,7 +153,7 @@ Enter the directory:
 
 Choose from either Gazebo or jMAVSim
 <br/>
-```make px4_sitl_default```
+```make px4_sitl_default jmavsim```
 <br/>
 or 
 <br/>
