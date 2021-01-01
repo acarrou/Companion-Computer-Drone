@@ -15,7 +15,9 @@ This guide is meant to help people interested in making a drone using a Pixhawk 
         - [GPIO Pin Configuration](#gpio-pin-configuration)
         - [Raspberry Pi Serial Configuration](#raspberry-pi-serial-configuration)
         - [Raspberry Pi and Pixhawk Communication](#raspberry-pi-and-pixhawk-communication)
-        - [Dronekit and Simulation](#dronekit-and-simulation)
+        - [Dronekit](#dronekit)
+            - [Simulation (Ubuntu)](#simulation-(ubuntu))
+        
     
 
 # :one: Getting Started
@@ -123,11 +125,8 @@ Then check to see if the pi can communicate with a ncomputer using QGroundContro
 mavproxy.py --master=/dev/serial0 --baudrate 921600 --out <Computer IP>:14550 --aircraft MyCopter 
 ```
 
-### Dronekit and Simulation (Ubuntu)
-***--NEED TO DO THIS--***
-<br><br/>
-<br><br/>
-#### Simulation
+### Dronekit
+#### Simulation (Ubuntu)
 If simulating the drone using Dronekit to test scripts is something you're interested in follow along. Otherwise proceed to the Dronekit Installation on the Pi.
 <br><br/>
 
@@ -173,9 +172,10 @@ sudo python setup.py install
 <br><br/>
 
 While the Simulation is running in the background, you can use an IDE of your choice (We are using Pycharm). In the IDE go to the directory and use the interpreter from the dronekit repository. Then run this code below that uses the Dronekit library.
-<br><br/>
-***---File here---***
-
+<br/>
+[Dronekit Mission Example](DronekitMissionEx)
+<br/>
+Notice the code uses the IP - '127.0.0.1:14540' as this is the simualtions IP. Run the code and see it take off!
 
 
 In your Raspberry Pi's terminal enter these commands:
@@ -192,7 +192,7 @@ sudo pip install pyserial
 sudo pip install dronekit
 sudo pip install MAVProxy
 ```
-
+***---NEED TO DO (putting the code together that runs on the drone to execute the mission programmed in Dronekit)---***
 
 
 
