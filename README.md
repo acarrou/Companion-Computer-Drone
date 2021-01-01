@@ -134,6 +134,11 @@ Clone the PX4 source code:
 ```git clone https://github.com/PX4/PX4-Autopilot.git --recursive```
 <br><br/>
 
+Enter the directory:
+<br/>
+```cd /path/to/PX4-Autopilot```
+<br/>
+
 Install:
 <br/>
 ```bash ./Tools/setup/ubuntu.sh```
