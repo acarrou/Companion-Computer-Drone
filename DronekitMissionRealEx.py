@@ -17,7 +17,7 @@ import time, sys, argparse, math
 # Settings
 ################################################################################################
 
-connection_string       = '	/dev/serial0'
+connection_string   = '/dev/serial0'
 MAV_MODE_AUTO   = 4
 # https://github.com/PX4/PX4-Autopilot/blob/master/Tools/mavlink_px4.py
 
