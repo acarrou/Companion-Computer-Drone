@@ -37,7 +37,7 @@ if args.connect:
 
 # Connect to the Vehicle
 print "Connecting"
-vehicle = connect(connection_string, wait_ready=True, baud=921600)
+vehicle = connect(connection_string, wait_ready=True)
 
 def PX4setMode(mavMode):
     vehicle._master.mav.command_long_send(vehicle._master.target_system, vehicle._master.target_component,
