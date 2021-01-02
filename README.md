@@ -177,7 +177,7 @@ sudo python setup.py install
 
 While the Simulation is running in the background, you can use an IDE of your choice (We are using Pycharm). In the IDE go to the directory and use the interpreter from the dronekit repository. Then run this code below that uses the Dronekit library.
 <br/>
-[Dronekit Mission Example](DronekitMissionEx)
+[Dronekit Mission Example](DronekitMissionSimEx)
 <br/>
 Notice the code uses the IP - '127.0.0.1:14540' as this is the simulations IP. Run the code and see it take off!
 <br><br/>
