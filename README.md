@@ -204,8 +204,11 @@ Create a folder where you can put your dronekit scripts. Take the code from [Dro
 
 Run Command:
 <br/>
+***ATTENTION! THIS PROGRAM ARMS THE DRONE AND EXECUTES THE PATH***
+<br/>
 ```python DronekitMissionRealEx.py --connect /dev/serial0```
 <br/>
+
 You now have a drone running with Dronekit! For more information on Dronekit, visit their documentation page [here](https://dronekit-python.readthedocs.io/en/latest/about/index.html).
 
 
