@@ -177,7 +177,7 @@ sudo python setup.py install
 
 While the Simulation is running in the background, you can use an IDE of your choice (We are using Pycharm). In the IDE go to the directory and use the interpreter from the dronekit repository. Then run this code below that uses the Dronekit library.
 <br/>
-[Dronekit Mission Example](DronekitMissionSimEx)
+[Dronekit Mission Simulation Example](DronekitMissionSimEx)
 <br/>
 Notice the code uses the IP - '127.0.0.1:14540' as this is the simulations IP. Run the code and see it take off!
 <br><br/>
@@ -197,10 +197,16 @@ sudo pip install pyserial
 sudo pip install dronekit
 sudo pip install MAVProxy
 ```
-***---NEED TO DO (putting the code together that runs on the drone to execute the mission programmed in Dronekit)---***
+<br/>
 
+Create a folder where you can put your dronekit scripts. Take the code from [Dronekit Mission Real Example](DronekitMissionRealEx). Notice the connection string is different from the IP we had before in the simulation. We also had to specify the baud rate in the vehicle initialization on line 40 for our pixhawk and Pi to communicate. Now that we have the code set up lets run the program!
+<br><br/>
 
-
+Run Command:
+<br/>
+```python DronekitMissionRealEx.py --connect /dev/serial0```
+<br/>
+You now have a drone running with Dronekit! For more information on Dronekit, visit their documentation page [here](https://dronekit-python.readthedocs.io/en/latest/about/index.html).
 
 
 
