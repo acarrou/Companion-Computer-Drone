@@ -105,6 +105,7 @@ Install rosdep:
 <br/>
 Initialize rosdep:
 <br/>
+
 ```
 sudo rosdep init
 rosdep update
@@ -112,14 +113,14 @@ rosdep update
 <br><br/>
 
 ### MAVROS Installation
-***--NEED TO WORK ON THIS--***
+***--NEED TO WORK ON THIS--*** <br/>
 MAVROS is the MAVLink extendable communication node for ROS with proxy for Ground Control Station.
-<br/>
+<br><br/>
 Install MAVROS:
 <br/>
 ```sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras```
-<br/>
-Install Geographic datasets
+<br><br/>
+Install Geographic datasets:
 <br/>
 ```
 wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
@@ -140,7 +141,7 @@ After plugging the cord into the Pixhawk and Nano you can run this command to se
 ```roslaunch mavros px4.launch```
 <br><br/>
 
-If there is a permissions issue with the serial port. Make sure your user is in the 'dialout' group. You can do this by using this command (replace the 'enterusername' with your username):
+If there is a permissions issue with the serial port, make sure your user is in the 'dialout' group. You can do this by using this command (replace the 'enterusername' with your username):
 <br/>
 ```sudo usermod -a -G dialout enterusername```
 <br/>
