@@ -179,6 +179,7 @@ On your Raspberry Pi, enter:
 sudo raspi-config
 ```
 And in the utility, select “Interfacing Options”:
+<br/>
 ![alt text](https://ardupilot.org/dev/_images/RaspberryPi_Serial1.png)
 <br><br/>
 RasPiConfiguration Utility
@@ -211,7 +212,7 @@ After you have changed those parameters restart the Pixhawk. If not done already
 mavproxy.py --master=/dev/serial0 --baudrate 921600 --aircraft MyCopter
 ``` 
 
-Then check to see if the pi can communicate with a ncomputer using QGroundControl
+Then check to see if the pi can communicate with a computer using QGroundControl (Your Computer's IP running QGC)
 ```bash
 mavproxy.py --master=/dev/serial0 --baudrate 921600 --out <Computer IP>:14550 --aircraft MyCopter 
 ```
