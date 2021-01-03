@@ -158,8 +158,7 @@ If there is a permissions issue with the serial port, make sure your user is in 
 ```bash
 sudo usermod -a -G dialout enterusername
 ```
-<br/>
-Congrats! You have successfully connected your Nano to your Pixhawk.
+Congrats! You have successfully connected your Nano to your Pixhawk. If you are having trouble, this [video](https://www.youtube.com/watch?v=Irko6xb2qjs) may help you.
 <br><br/>
 
 
