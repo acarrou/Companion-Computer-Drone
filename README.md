@@ -69,17 +69,21 @@ We are using ROS Melodic as the Jetson Nano is using their NVIDIA® Jetson Nano�
 
 Setting your sources.list
 <br/>
-```sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'```
+```bash
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+```
 <br/>
 
 Keys Setup:
 <br/>
-```sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654```
+```bash
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+```
 <br/>
 
 Install:
 <br/>
-```
+```bash
 sudo apt update
 sudo apt install ros-melodic-desktop-full
 ```
@@ -87,7 +91,7 @@ sudo apt install ros-melodic-desktop-full
 
 Environment Setup:
 <br/>
-```
+```bash
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
@@ -95,18 +99,22 @@ source ~/.bashrc
 
 (Optional) Dependencies for Building Packages:
 <br/>
-```sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential```
+```bash
+sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+```
 <br/>
 
 Install rosdep:
 <br/>
-```sudo apt install python-rosdep```
+```bash
+sudo apt install python-rosdep
+```
 
 <br/>
 Initialize rosdep:
 <br/>
 
-```
+```bash
 sudo rosdep init
 rosdep update
 ```
@@ -118,11 +126,13 @@ MAVROS is the MAVLink extendable communication node for ROS with proxy for Groun
 <br><br/>
 Install MAVROS:
 <br/>
-```sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras```
+```bash
+sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras
+```
 <br><br/>
 Install Geographic datasets:
 <br/>
-```
+```bash
 wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 chmod a+x install_geographiclib_datasets.sh
 sudo ./install_geographiclib_datasets.sh
@@ -138,12 +148,16 @@ The configuration for the Pixhawk and Jetson Nano is very simple. Use a micro us
 ### Jetson Nano and Pixhawk Communication
 After plugging the cord into the Pixhawk and Nano you can run this command to see if everything is correct:
 <br/>
-```roslaunch mavros px4.launch```
+```bash
+roslaunch mavros px4.launch
+```
 <br><br/>
 
 If there is a permissions issue with the serial port, make sure your user is in the 'dialout' group. You can do this by using this command (replace the 'enterusername' with your username):
 <br/>
-```sudo usermod -a -G dialout enterusername```
+```bash
+sudo usermod -a -G dialout enterusername
+```
 <br/>
 Congrats! You have successfully connected your Nano to your Pixhawk.
 <br><br/>
@@ -162,7 +176,9 @@ In order for the Pi to communicate with the Pixhawk, we need to connect four cab
 ### Raspberry Pi Serial Configuration
 
 On your Raspberry Pi, enter:
-```sudo raspi-config```
+```bash
+sudo raspi-config
+```
 And in the utility, select “Interfacing Options”:
 ![alt text](https://ardupilot.org/dev/_images/RaspberryPi_Serial1.png)
 <br><br/>
@@ -185,19 +201,19 @@ The Raspberry Pi’s serial port will now be usable on ```/dev/serial0```.
 ### Raspberry Pi and Pixhawk Communication
 
 Once you have configured you Pi, you now have to change a few parameters on your pixhawk in QGroundControl or another ground control software. To set up the default companion computer message stream on TELEM 2, set the following parameters:
-```
+```bash
 MAV_1_CONFIG = TELEM 2 (MAV_1_CONFIG is often used to map the TELEM 2 port)
 MAV_1_MODE = Onboard
 SER_TEL2_BAUD = 921600 (921600 or higher recommended for applications like log streaming or FastRTPS)
 ```
 
 After you have changed those parameters restart the Pixhawk. If not done already, connect the Raspberry Pi to the Pixhawk. Run this command in the terminal to test if the connection is made.
-```
+```bash
 mavproxy.py --master=/dev/serial0 --baudrate 921600 --aircraft MyCopter
 ``` 
 
 Then check to see if the pi can communicate with a ncomputer using QGroundControl
-```
+```bash
 mavproxy.py --master=/dev/serial0 --baudrate 921600 --out <Computer IP>:14550 --aircraft MyCopter 
 ```
 <br><br/>
@@ -209,46 +225,62 @@ If simulating the drone using Dronekit to test scripts is something you're inter
 
 Clone the PX4 source code:
 <br/>
-```git clone https://github.com/PX4/PX4-Autopilot.git --recursive```
+```bash
+git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+```
 <br><br/>
 
 Enter the directory:
 <br/>
-```cd /path/to/PX4-Autopilot```
+```bash
+cd /path/to/PX4-Autopilot
+```
 <br/>
 
 Install:
 <br/>
-```bash ./Tools/setup/ubuntu.sh```
+```bash
+bash ./Tools/setup/ubuntu.sh
+```
 <br><br/>
 
 Check to see if you can run the simulation on your linux machine.
 <br/>
 Enter the directory:
 <br/>
-```cd /path/to/PX4-Autopilot```
+```bash
+cd /path/to/PX4-Autopilot
+```
 <br><br/>
 
 Choose from either Gazebo or jMAVSim
 <br/>
-```make px4_sitl_default jmavsim```
+```bash
+make px4_sitl_default jmavsim
+```
 <br/>
 or 
 <br/>
-```make px4_sitl gazebo```
+```bash
+make px4_sitl gazebo
+```
 <br><br/>
 
 In your linux terminal clone the Dronekit repository using:
 <br/>
-```git clone https://github.com/dronekit/dronekit-python.git```
+```bash
+git clone https://github.com/dronekit/dronekit-python.git
+```
 <br/>
 Enter the directory:
 <br/>
-```cd ./dronekit-python```
+```bash
+cd ./dronekit-python
+```
 <br/>
 Then build and install:
 <br/>
-```
+```bash
 sudo python setup.py build
 sudo python setup.py install
 ```
@@ -264,12 +296,12 @@ Notice the code uses the IP - '127.0.0.1:14540' as this is the simulations IP. R
 In your Raspberry Pi's terminal enter these commands:
 
 Update Pi
-```
+```bash
 sudo apt-get update
 sudo apt-get upgrade
 ```
 Install Dronekit, and Dependencies
-```
+```bash
 sudo apt-get install python-pip python-dev
 sudo pip install pyserial
 sudo pip install dronekit
@@ -284,7 +316,9 @@ Run Command:
 <br/>
 ***ATTENTION! THIS PROGRAM ARMS THE DRONE AND EXECUTES THE PATH***
 <br/>
-```python DronekitMissionRealEx.py --connect /dev/serial0```
+```bash
+python DronekitMissionRealEx.py --connect /dev/serial0
+```
 <br/>
 
 You now have a drone running with Dronekit! For more information on Dronekit, visit their documentation page [here](https://dronekit-python.readthedocs.io/en/latest/about/index.html).
