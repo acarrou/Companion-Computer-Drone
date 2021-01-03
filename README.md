@@ -10,7 +10,9 @@ This guide is meant to help people interested in making a drone using a Pixhawk 
 - [:two: The Onboard Computer](#two-the-onboard-computer)
     - [Jetson Nano](#jetson-nano)
         - [ROS Melodic Installation](#ros-melodic-installation)
-        - [MAVROS](#mavros)
+        - [MAVROS Installation](#mavros-installation)
+        - [Pixhawk and Jetson Nano Configuration](#pixhawk-and-jetson-nano-configuration)
+        - [Jetson Nano and Pixhawk Communication](#jetson-nano-and-pixhawk-communication)
     - [Raspberry Pi](#raspberry-pi)
         - [GPIO Pin Configuration](#gpio-pin-configuration)
         - [Raspberry Pi Serial Configuration](#raspberry-pi-serial-configuration)
@@ -62,12 +64,86 @@ There are two companion computers we recommend using the Jetson Nano or the Rasp
 ## Jetson Nano
 We wil be using ROS with the Jetson Nano. If you are unfamilliar with ROS, I would recommend you learn it first through the [documentation](http://wiki.ros.org/Documentation) as this part wil assume you know how to operate the catkin workspace. For more information on the Jetson nano, please follow this ***[site](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)***. It would be best if you used ***[Balena Etcher](https://www.balena.io/etcher/)*** for an easy imaging process. A helpful video I found is ***[here](https://www.youtube.com/watch?v=fepv1uDyiXk)***. Use the image given for the Jetson Nano ***[here](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write)***. Once you have successfully imaged your Jetson Nano put the sd card into the nano.
 ### ROS Melodic Installation
-***--NEED TO DO THIS--***
+We are using ROS Melodic as the Jetson Nano is using their NVIDIA® Jetson Nano™ Developer Kit deriving from Ubuntu 18.04. This ROS install is taken from [here](http://wiki.ros.org/melodic/Installation/Ubuntu)
+<br/>
+
+Setting your sources.list
+<br/>
+```sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'```
+<br/>
+
+Keys Setup:
+<br/>
+```sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654```
+<br/>
+
+Install:
+<br/>
+```
+sudo apt update
+sudo apt install ros-melodic-desktop-full
+```
+<br/>
+
+Environment Setup:
+<br/>
+```
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+<br/>
+
+(Optional) Dependencies for Building Packages:
+<br/>
+```sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential```
+<br/>
+
+Install rosdep:
+<br/>
+```sudo apt install python-rosdep```
+
+<br/>
+Initialize rosdep:
+<br/>
+```
+sudo rosdep init
+rosdep update
+```
 <br><br/>
+### MAVROS Installation
+***--NEED TO WORK ON THIS--***
+MAVROS is the MAVLink extendable communication node for ROS with proxy for Ground Control Station.
+<br/>
+Install MAVROS:
+<br/>
+```sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras```
+<br/>
+Install Geographic datasets
+<br/>
+```
+wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+chmod a+x install_geographiclib_datasets.sh
+sudo ./install_geographiclib_datasets.sh
+```
 <br><br/>
-### MAVROS
-***--NEED TO DO THIS--***
+
+### Pixhawk and Jetson Nano Configuration
+The configuration for the Pixhawk and Jetson Nano is very simple. Use a micro usb to usb cable. Connect the micro usb side into the Pixhawk's serial port and the usb into the Jetson nano.
+<br/>
+![alt text](https://ardupilot.org/copter/_images/pixhawk_usb_connection.jpg)
 <br><br/>
+
+### Jetson Nano and Pixhawk Communication
+After plugging the cord into the Pixhawk and Nano you can run this command to see if everything is correct:
+<br/>
+```roslaunch mavros px4.launch```
+<br><br/>
+
+If there is a permissions issue with the serial port. Make sure your user is in the 'dialout' group. You can do this by using this command (replace the 'enterusername' with your username):
+<br/>
+```sudo usermod -a -G dialout enterusername```
+<br/>
+Congrats! You have successfully connected your Nano to your Pixhawk.
 <br><br/>
 
 
