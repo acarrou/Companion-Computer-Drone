@@ -151,7 +151,7 @@ After plugging the cord into the Pixhawk and Nano you can run this command to se
 ```bash
 roslaunch mavros px4.launch
 ```
-<br><br/>
+<br/>
 
 If there is a permissions issue with the serial port, make sure your user is in the 'dialout' group. You can do this by using this command (replace the 'enterusername' with your username):
 <br/>
