@@ -228,7 +228,7 @@ Clone the PX4 source code:
 ```bash
 git clone https://github.com/PX4/PX4-Autopilot.git --recursive
 ```
-<br><br/>
+<br/>
 
 Enter the directory:
 <br/>
@@ -242,7 +242,7 @@ Install:
 ```bash
 bash ./Tools/setup/ubuntu.sh
 ```
-<br><br/>
+<br/>
 
 Check to see if you can run the simulation on your linux machine.
 <br/>
@@ -251,7 +251,7 @@ Enter the directory:
 ```bash
 cd /path/to/PX4-Autopilot
 ```
-<br><br/>
+<br/>
 
 Choose from either Gazebo or jMAVSim
 <br/>
@@ -261,10 +261,11 @@ make px4_sitl_default jmavsim
 <br/>
 or 
 <br/>
+
 ```bash
 make px4_sitl gazebo
 ```
-<br><br/>
+<br/>
 
 In your linux terminal clone the Dronekit repository using:
 <br/>
