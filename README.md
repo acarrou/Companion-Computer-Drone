@@ -253,13 +253,12 @@ cd /path/to/PX4-Autopilot
 ```
 <br/>
 
-Choose from either Gazebo or jMAVSim
+Choose from either Gazebo or jMAVSim:
 <br/>
 ```bash
 make px4_sitl_default jmavsim
 ```
-<br/>
-or 
+OR 
 <br/>
 
 ```bash
