@@ -232,6 +232,7 @@ git clone https://github.com/PX4/PX4-Autopilot.git --recursive
 
 Enter the directory:
 <br/>
+
 ```bash
 cd /path/to/PX4-Autopilot
 ```
@@ -248,6 +249,7 @@ Check to see if you can run the simulation on your linux machine.
 <br/>
 Enter the directory:
 <br/>
+
 ```bash
 cd /path/to/PX4-Autopilot
 ```
@@ -274,12 +276,14 @@ git clone https://github.com/dronekit/dronekit-python.git
 <br/>
 Enter the directory:
 <br/>
+
 ```bash
 cd ./dronekit-python
 ```
 <br/>
 Then build and install:
 <br/>
+
 ```bash
 sudo python setup.py build
 sudo python setup.py install
