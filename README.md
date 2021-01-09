@@ -234,7 +234,7 @@ Enter the directory:
 <br/>
 
 ```bash
-cd /path/to/PX4-Autopilot
+cd PX4-Autopilot/
 ```
 <br/>
 
@@ -251,7 +251,7 @@ Enter the directory:
 <br/>
 
 ```bash
-cd /path/to/PX4-Autopilot
+cd PX4-Autopilot/
 ```
 <br/>
 
