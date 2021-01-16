@@ -207,7 +207,35 @@ MAV_1_MODE = Onboard
 SER_TEL2_BAUD = 921600 (921600 or higher recommended for applications like log streaming or FastRTPS)
 ```
 
-After you have changed those parameters restart the Pixhawk. If not done already, connect the Raspberry Pi to the Pixhawk. You will need to install MAVLink dependencies. If you dont reboot after running installing it will not work. You can find the MAVLink install [here](https://ardupilot.org/mavproxy/docs/getting_started/download_and_installation.html#mavproxy-downloadinstalllinux). Once finished installing everything, run this command in the terminal to test if the connection is made.
+After you have changed those parameters restart the Pixhawk. If not done already, connect the Raspberry Pi to the Pixhawk. You will need to install MAVLink dependencies.You can find the MAVLink install here -> [MAVLINK INSTALL GUIDE](https://ardupilot.org/mavproxy/docs/getting_started/download_and_installation.html#mavproxy-downloadinstalllinux). I will show below how to install these dependencies for Python 2 since that is what the Pi has on default.
+
+For Python 2 on Debian based systems (including Ubuntu, WSL, Raspian):
+<br/>
+```bash 
+sudo apt-get install python-dev python-opencv python-wxgtk4.0 python-pip python-matplotlib python-lxml python-pygame
+pip install PyYAML mavproxy --user
+echo "export PATH=$PATH:$HOME/.local/bin" >> ~/.bashrc
+```
+
+If you get a “permission denied” error message when connecting to serial devices, the user permissions may need to be changed:
+<br/>
+```bash 
+sudo usermod -a -G dialout <username>
+```
+
+Make sure you update:
+<br/>
+```bash
+pip install mavproxy --user --upgrade
+```
+Once finished installing everything, make sure to reboot the Pi.
+<br><br/>
+
+
+Next run this command in the terminal to test the serial connection between the Pi and Pixhawk. If you are only getting the ```MAV>``` sign, make sure your parameters are correct for baud rate and correct telemetry port. It could also be your gpio pins are incorrect or not fully pushed on the RPI.
+<br/>
+Enter this command to test:
+<br/>
 ```bash
 mavproxy.py --master=/dev/serial0 --baudrate 921600 --aircraft MyCopter
 ``` 
