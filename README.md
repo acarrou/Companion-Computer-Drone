@@ -207,7 +207,7 @@ MAV_1_MODE = Onboard
 SER_TEL2_BAUD = 921600 (921600 or higher recommended for applications like log streaming or FastRTPS)
 ```
 
-After you have changed those parameters restart the Pixhawk. If not done already, connect the Raspberry Pi to the Pixhawk. You will need to install MAVLink dependencies. If you dont reboot after running installing it will not work. You can find the MAVLink install [here](https://ardupilot.org/mavproxy/docs/getting_started/download_and_installation.html#mavproxy-downloadinstalllinux) Run this command in the terminal to test if the connection is made.
+After you have changed those parameters restart the Pixhawk. If not done already, connect the Raspberry Pi to the Pixhawk. You will need to install MAVLink dependencies. If you dont reboot after running installing it will not work. You can find the MAVLink install [here](https://ardupilot.org/mavproxy/docs/getting_started/download_and_installation.html#mavproxy-downloadinstalllinux). Once finished installing everything, run this command in the terminal to test if the connection is made.
 ```bash
 mavproxy.py --master=/dev/serial0 --baudrate 921600 --aircraft MyCopter
 ``` 
