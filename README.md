@@ -207,7 +207,7 @@ MAV_1_MODE = Onboard
 SER_TEL2_BAUD = 921600 (921600 or higher recommended for applications like log streaming or FastRTPS)
 ```
 
-After you have changed those parameters restart the Pixhawk. If not done already, connect the Raspberry Pi to the Pixhawk. You will need to install MAVLink dependencies.You can find the MAVLink install here -> [MAVLINK INSTALL GUIDE](https://ardupilot.org/mavproxy/docs/getting_started/download_and_installation.html#mavproxy-downloadinstalllinux). I will show below how to install these dependencies for Python 2 since that is what the Pi has on default.
+After you have changed those parameters restart the Pixhawk. If not done already, connect the Raspberry Pi to the Pixhawk. You will need to install MAVProxy dependencies.You can find the MAVProxy install here -> [MAVProxy INSTALL GUIDE](https://ardupilot.org/mavproxy/docs/getting_started/download_and_installation.html#mavproxy-downloadinstalllinux). I will show below how to install these dependencies for Python 2 since that is what the Pi has on default.
 
 For Python 2 on Debian based systems (including Ubuntu, WSL, Raspian):
 <br/>
