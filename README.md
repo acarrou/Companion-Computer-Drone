@@ -211,6 +211,16 @@ After you have changed those parameters restart the Pixhawk. If not done already
 ```bash
 mavproxy.py --master=/dev/serial0 --baudrate 921600 --aircraft MyCopter
 ``` 
+You should see something like this:
+<br/>
+![alt text](https://ardupilot.org/dev/_images/RaspberryPi_ArmTestThroughPutty.png)
+<br/>
+You can also arm and test the throttle by typing :
+<br/>
+***MAKE SURE YOUUR PROPS ARE OFF BEFORE!*** 
+```bash
+arm throttle
+```
 
 Then check to see if the pi can communicate with a computer using QGroundControl (Your Computer's IP running QGC)
 ```bash
