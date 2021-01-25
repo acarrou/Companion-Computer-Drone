@@ -1,4 +1,5 @@
-# Introduction
+# PX4 Companion-Computer-Drone
+## Introduction
 This guide is meant to help people interested in making a drone using a Pixhawk as the flight controller with an onboard computer of your choice using Dronekit or ROS. This guide shows you how to use Dronekit using a Raspberry Pi and ROS with a Jetson Nano. However, they can both be done the same way with some changes. There are specific components that are needed to complete this project.
 
 
