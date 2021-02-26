@@ -60,7 +60,9 @@ We are using [QGroundControl](https://docs.qgroundcontrol.com/master/en/getting_
 <br><br/>
 
 # :two: The Onboard Computer
-There are two companion computers we recommend using the Jetson Nano or the Raspberry Pi. The Jetson Nano is a pricier embedded system compared to the Raspberry Pi. However, it makes an excellent system for object detection/avoidance. Make sure you have all the necessary parts to power and put an OS on these computers. You will need a device to put the OS on the micro sd card. Something like this -> ***[Micro SD Card USB Reader.](https://www.amazon.com/UGREEN-Reader-Portable-Adapter-Windows/dp/B0779V61XB/ref=sr_1_7?dchild=1&keywords=micro+sd+usb&qid=1609284957&sr=8-7)*** This makes it easy to image. 
+There are two companion computers we recommend using the Jetson Nano or the Raspberry Pi. The Jetson Nano is a pricier embedded system compared to the Raspberry Pi. However, it makes an excellent system for object detection/avoidance. Make sure you have all the necessary parts to power and put an OS on these computers. You will need a device to put the OS on the micro sd card. Something like this -> ***[Micro SD Card USB Reader.](https://www.amazon.com/UGREEN-Reader-Portable-Adapter-Windows/dp/B0779V61XB/ref=sr_1_7?dchild=1&keywords=micro+sd+usb&qid=1609284957&sr=8-7)*** This makes it easy to image.
+<br/>
+@nKuylen has made a platform in the back of the drone for the Raspberry pi or Jetson Nano. We recommend printing this or developing your own.
 
 ## Jetson Nano (***THIS SECTION IS STILL UNDER CONSTRUCTION USE THE RASPBERRY PI FOR NOW***)
 
